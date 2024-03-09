@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glamping</title>
+    <link rel="icon" href="./image/camping.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    /> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a href="./index.html">
+          <img
+            src="./image/tents-solid.jpg"
+            alt=""
+            class="navbar-brand me-auto"
+        /></a>
+        <a class="navbar-brand me-auto" href="./index.html">Glamping</a>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Glamping</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" aria-current="page" href="#"
+                  >首 頁</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#room">房型介紹</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#rulesa">營區守則</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#location">交通位置</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="./login.html">會員登入</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="./book.html" class="login-button">Book now</a>
+        <button
+          class="navbar-toggler pe-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!--navbar end-->
+
+    <!--section-->
+    <section class="hero-section">
+      <div
+        class="container d-flex align-item-center justify-content-center fs-1 text-white flex-column"
+      >
+        <h1>Welcome Glamping</h1>
+      </div>
+    </section>
+    <!--section end-->
+
+    <div class="container">
+      <!--房型介紹-->
+      <div class="room">
+        <a name="room"><h2 class="roomtour1 p-2">房型介紹</h2></a><br />
+        <h2 class="roomtour">房型介紹</h2>
+        <div class="row">
+          <div class="col-sm-6 pt-4">
+            <h4>蓮花帳篷</h4>
+            <ul>
+              <li>4人房</li>
+              <li>兩張標準雙人彈簧床墊 ( 25 公分厚)</li>
+              <li>飯店寢具 (提供飯店級枕頭 4 顆 + 6*7 尺被子兩張)</li>
+              <li>延長線一條</li>
+              <li>垃圾桶</li>
+              <li>夜燈</li>
+              <li>電扇</li>
+              <li>毛巾</li>
+            </ul>
+          </div>
+          <div class="col-sm-6 pt-4">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./image/蓮花帳篷.jpg"
+                    class="d-block mx-auto w-100"
+                    alt="蓮花帳篷"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./image/蓮花1.jpg"
+                    class="d-block mx-auto w-100"
+                    alt="蓮花帳篷"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-sm-6 pt-2">
+            <h4>美式露營車</h4>
+            <ul>
+              <li>4人房</li>
+              <li>兩張標準雙人彈簧床墊 ( 25 公分厚)</li>
+              <li>飯店寢具 (提供飯店級枕頭 4 顆 + 6*7 尺被子兩張)</li>
+              <li>延長線一條</li>
+              <li>垃圾桶</li>
+              <li>夜燈</li>
+              <li>電扇</li>
+              <li>毛巾</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <div id="carouselExampleIndicators1" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators1"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators1"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators1"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./image/美式露營車.jpg"
+                    class="d-block mx-auto w-100"
+                    alt="美式露營車"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./image/美式露營車1.jpg"
+                    class="d-block mx-auto w-100"
+                    alt="美式露營車"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./image/美式露營車2.jpg"
+                    class="d-block mx-auto w-100"
+                    alt="美式露營車"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!--房型介紹 end-->
+
+      <!--營區守則-->
+      <div class="rules mt-5">
+        <a name="rulesa"><h2 class="rules2 text-center p-3">營區守則</h2></a>
+        <h2 class="rules1 text-center p-3">營區守則</h2>
+        <h3 class="text-center pt-3 fw-bold text-secondary"><b>露營時程</b></h3>
+        <p class="text-center pt-2 fw-bold text-secondary">入營時間 : 15:00 ~ 17:00</p>
+        <p class="text-center fw-bold text-secondary">離營點交 : 10:00 ~ 10:30</p>
+        <p class="text-center fw-bold text-secondary">11:00前離場</p>
+        <p class="text-center text-secondary">
+          務請準時入營，以利裝備點交，也免天黑造成不便，離營時亦請準時，以免影響其他露友，也免現場服務夥伴壓力爆表。
+        </p>
+        <h3 class="text-center pt-5 text-secondary fw-bold"><b>其他事項</b></h3>
+        <ul class="notice text-center text-secondary">
+          <li>為尊重全區露友之權益，本營區不開放非預約宿營者參觀。</li>
+          <li>
+            營地依帳別不同限定入宿人數，謝絕露友之訪客同宿。<br />
+            開放訪客一同野炊，訪客人數以入住總人數1/3為限，入場訪客費用1000元/人。
+          </li>
+        </ul>
+      </div>
+      <!--營區守則 end-->
+
+      <!--交通位置-->
+      <div class="location mt-5">
+        <a name="location"
+          ><h2 class="location1 text-center p-3">交通位置</h2></a
+        >
+        <h2 class="location2 text-center p-3">交通位置</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3635.502775959044!2d120.83037763888572!3d24.328972978370537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346903a1b392ec4b%3A0xe842454f2f617c62!2zR2xhbXBpbmcgSHlnZ2UgSGlsbCDlsbHph47mo67mtLs!5e0!3m2!1szh-TW!2stw!4v1703661682906!5m2!1szh-TW!2stw"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <!--交通位置end-->
+    </div>
+    <!--footer-->
+    <footer class="site-footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              不只是一個旅遊的停靠點，在每個專屬打造的空間之中，享受當地的文化、獨特景色。
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="index.html">首頁</a>
+              </li>
+              <li>
+                <a href="./index.html#room">房型介紹</a>
+              </li>
+              <li>
+                <a href="./index.html#rulesa">營區守則</a>
+              </li>
+              <li>
+                <a href="./index.html#location">交通位置</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>INFORMATION</h6>
+            <ul class="footer-links">
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i> 0800-000-000
+              </li>
+              <li>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                苗栗縣卓蘭鎮西坪里3鄰西坪33-1號
+              </li>
+              <li>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                123@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </footer>
+    <!--footer end-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

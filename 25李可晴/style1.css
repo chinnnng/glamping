@@ -1,0 +1,59 @@
+body {
+  background: url(./image/wren-meinberg-xqV9QdGOSas-unsplash.jpg) no-repeat center center fixed;
+  font-family: "Muli", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+}
+.card {
+  background-color: rgb(248, 248, 248);
+  border-radius: 25px;
+  margin-bottom: 50px;
+  width: 23rem;
+  
+}
+h3 {
+  color: #a7946d;
+  /* border-bottom: 2px solid #a7946d; */
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
+a {
+  color: #333;
+}
+a:hover {
+  color: #a7946d;
+  text-decoration: none;
+}
+.form-control:focus {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #a7946d;
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn {
+  background: #a7946d;
+  border: #a7946d;
+}
+.btn:hover {
+  background: #ccb78d;
+  border: #a7946d;
+}
+#price {
+  display: none; /* 初始隱藏價格 */
+}
+.step-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
